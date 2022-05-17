@@ -12,8 +12,7 @@ import TextField from '@mui/material/TextField';
 class addStudent extends Component {
       constructor(props) {
       super(props);
-      //this.state = {open: false, student:{ } };
-	  
+
 	  this.state = {open: false, student:{ 
 	  
 	  email: null,
@@ -30,10 +29,6 @@ class addStudent extends Component {
       this.setState( {open:false} );
     };
 
-   // handleChange = (event) => {
-    //  this.setState({student:{ email: event.target.value, name: event.target.value}});
-   // }
-	
 	
 	handleChange = (event) => {
     const key = event.target.name

@@ -40,7 +40,7 @@ class AddCourse extends Component {
               Add Course
             </Button>
             <Dialog open={this.state.open} onClose={this.handleClose}>
-                <DialogTitle>Add Course</DialogTitle>
+                <DialogTitle>Add Course </DialogTitle>
                 <DialogContent  style={{paddingTop: 20}} >
                   <TextField autoFocus fullWidth label="Course Id" name="course_id" onChange={this.handleChange}  /> 
                 </DialogContent>

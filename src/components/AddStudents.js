@@ -62,39 +62,6 @@ class AddStudents extends Component {
         console.error(err); 
     })
   }
-/*
-  // Drop Course 
-  onDelClick = (id) => {
-    if (window.confirm('Are you sure you want to drop the course?')) {
-      const token = Cookies.get('XSRF-TOKEN');
-      
-      fetch(`${SERVER_URL}/schedule/${id}`,
-        {
-          method: 'DELETE',
-          headers: { 'X-XSRF-TOKEN': token }
-        })
-    .then(res => {
-        if (res.ok) {
-          toast.success("Course successfully dropped", {
-              position: toast.POSITION.BOTTOM_LEFT
-          });
-          this.fetchCourses();
-        } else {
-          toast.error("Course drop failed", {
-              position: toast.POSITION.BOTTOM_LEFT
-          });
-          console.error('Delete http status =' + res.status);
-    }})
-      .catch(err => {
-        toast.error("Course drop failed", {
-              position: toast.POSITION.BOTTOM_LEFT
-        });
-        console.error(err);
-      }) 
-    } 
-  }
-  
-  */
 
    // Add student
   AddingStu = (student) => {
