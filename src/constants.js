@@ -1,5 +1,4 @@
 export const SERVER_URL = 'https://registerapp258.herokuapp.com/';
-//'http://localhost:8080';
 
 export const SEMESTER_LIST = [
   {id:0, year:2020, name:'Fall'},
