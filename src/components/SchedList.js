@@ -37,7 +37,8 @@ class SchedList extends Component {
     fetch(`${SERVER_URL}/schedule?year=${this.props.location.year}&semester=${this.props.location.semester}`, 
       {  
         method: 'GET', 
-        headers: { 'X-XSRF-TOKEN': token }
+        headers: { 'X-XSRF-TOKEN': token },
+		credentials: 'include'
       } )
     .then((response) => {
       console.log("FETCH RESP:"+response);
